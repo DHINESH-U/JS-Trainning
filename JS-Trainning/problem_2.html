@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2</title>
+</head>
+<body>
+<script>
+let p=100;
+let b=200;
+let g=300;
+let t=400;
+let m=500;
+console.log("1. pizza=100\n2.chicken briyani=200\n;3. grill=300\n4. t=400\n5. mutton=500\n")
+let n=prompt("Number of items needed=")
+let s=0;
+for(let i=1;i<=n;i++){
+    let c=prompt("sollu da enna venum?")
+    if(c==1){
+        s+=p
+
+    }
+    else if(c==2){
+        s+=b
+    }
+    else if(c==3){
+        s+=g
+    }
+    else if(c==4){
+        s+=t
+    }
+    else if(c==5){
+        s+=m
+    }
+}
+if(s>=500){
+    s-=(s/10)
+    console.log(s)
+    
+}
+else{
+    console.log(s)
+}
+
+</script>
+    
+</body>
+</html>
+
+
+
+
+
+

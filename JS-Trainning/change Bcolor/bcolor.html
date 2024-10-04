@@ -1,0 +1,91 @@
+<!-- ///01.Create four buttons, three buttons should be in three different colors , the last button should be a reset button.
+First button of color = red
+Second button of color = blue
+Third button of color = Green
+Fourth button of color = No color 
+
+Task is to do the while clicking on the first button the background color red and button color default color.Remaining
+all the buttons should follow the same task.if i click the reset button it should be return to the initial stage. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Button Color Change</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 70px;
+            font-family: sans-serif;
+        }
+        button{
+            
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 30px;
+            /* border: none; */
+            cursor: pointer;
+            border-radius: 30%;
+          }
+          h1{
+            font-family: 'Times New Roman', Times, serif;
+          }
+        
+
+
+    </style>
+    <h1> CHANGING THE BACKGROUND COLOR </h1>
+
+    <button id="b1" onclick="red()">Red</button>
+    <button id="b2" onclick="blue()">Blue</button>
+    <button id="b3" onclick="green()">Green</button><br>
+    <button id="reset" onclick="reset()">Reset</button>
+
+    <script>
+        let a = document.getElementById("b1");
+        let b = document.getElementById("b2");
+        let c = document.getElementById("b3");
+        let d = document.getElementById("b4");
+
+        function red() {
+            document.body.style.backgroundColor = 'red';
+            a.style.backgroundColor='red';
+            b.style.backgroundColor='white';
+            c.style.backgroundColor='white';
+        
+        
+        }
+        
+        function blue() {
+            document.body.style.backgroundColor = 'blue';
+            b.style.backgroundColor='blue';
+            a.style.backgroundColor='white';
+            c.style.backgroundColor='white';
+        
+
+        }
+
+        function green() {
+            document.body.style.backgroundColor = 'green';
+            c.style.backgroundColor='green';
+            a.style.backgroundColor='white';
+            b.style.backgroundColor='white';
+        
+            
+        }
+
+
+        function reset() {
+            document.body.style.backgroundColor = 'white';
+            c.style.backgroundColor='white';
+            a.style.backgroundColor='white';
+            b.style.backgroundColor='white';
+        }
+    </script>
+
+</body>
+</html>
